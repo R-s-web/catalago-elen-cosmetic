@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+.header {
+    background-color: #ff6fae; /* Rosa */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+/* LOGO */
+.logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+/* NOMBRE DEL NEGOCIO */
+.nombre {
+    flex: 1;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: white;
+}
+
+/* REDES */
+.redes a {
+    color: white;
+    font-size: 22px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+/* CONTENEDOR DE PRODUCTOS */
+.productos {
+    padding: 20px;
+}
+
+/* TARJETA DEL PRODUCTO */
+.producto {
+    background-color: rgb(253, 253, 253);
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 9px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ANIMACIÓN SUAVE */
+.producto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* IMAGEN */
+.producto-img {
+    width: 35%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+/* NOMBRE */
+.producto-nombre {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+/* PRECIO */
+.producto-precio {
+    font-size: 16px;
+    color: #a60ee2;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+/* BOTÓN WHATSAPP */
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #f754db;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* BOTÓN WHATSAPP BASE */
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #e02391;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 
+        background-color 0.4s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* EFECTO AL PASAR EL CURSOR (COMPU) */
+.btn-whatsapp:hover {
+    background-color: #085f6e; /* verde más oscuro */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(165, 40, 238, 0.479);
+}
+
+/* EFECTO AL TOCAR (MÓVIL) */
+.btn-whatsapp:active {
+    background-color: #681aa8;
+    transform: scale(0.96);
+}
+
+/* QUITAR RESALTADO AZUL EN MÓVIL */
+.btn-whatsapp {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.frase-motivadora {
+  margin: 60px 15px 30px;
+  padding: 35px 20px;
+  text-align: center;
+  background: #fff0f5;
+  border-radius: 18px;
+
+  /* Sombra suave */
+  box-shadow: 0 10px 25px rgba(233, 30, 99, 0.25);
+
+  /* Animación */
+  animation: animacionSuave 1.4s ease-in-out;
+}
+
+.frase-motivadora p {
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 15px;
+  color: #e91e63;
+  letter-spacing: 1px;
+}
+
+/* Animación suave */
+@keyframes animacionSuave {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
